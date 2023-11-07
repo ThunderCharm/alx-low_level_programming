@@ -14,7 +14,19 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-};
+} dog;
+
+
+int main() {
+    /* Example of using the dog struct */
+    dog my_dog = {"Buddy", 4.5, "Jane Doe"};
+    
+    printf("Dog's Name: %s\n", my_dog.name);
+    printf("Dog's Age: %.1f years\n", my_dog.age);
+    printf("Dog's Owner: %s\n", my_dog.owner);
+    
+    return 0;
+}
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
